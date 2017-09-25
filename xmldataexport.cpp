@@ -37,7 +37,7 @@ static int createxml(void *data, int argc, char **argv, char **azColName){
    for(i = 1; i<argc; i++){
       //printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
       nElement = xmlDoc.NewElement(azColName[i]);
-      nElement->SetText("retard");
+      nElement->SetText(argv[i]);
       pElement->InsertEndChild(nElement);
    }
    
